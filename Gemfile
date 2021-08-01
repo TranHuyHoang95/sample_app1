@@ -47,10 +47,11 @@ group :development do
   gem "spring"
 end
 
-group :production do gem 'pg', '1.1.4'
+group :production do
+  gem "pg", "1.1.4"
 end
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
@@ -59,6 +60,3 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem "webdrivers"
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
