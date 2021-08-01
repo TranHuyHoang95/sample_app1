@@ -8,7 +8,7 @@ Style/Alias:
   Description: "Use alias_method instead of alias."
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignmen:
   Description: >-
                  Align the elements of a hash literal if they span more than
                  one line.
