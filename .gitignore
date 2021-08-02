@@ -8,6 +8,8 @@
 /.bundle
 /.framgia-ci-reports/
 .framgia-ci-result.temp.yml
+/config/database.yml
+/test/
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
