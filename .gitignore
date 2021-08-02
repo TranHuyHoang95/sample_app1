@@ -7,7 +7,7 @@
 # Ignore bundler config.
 /.bundle
 /.framgia-ci-reports/
-/.framgia-ci-result.temp.yml
+.framgia-ci-result.temp.yml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
