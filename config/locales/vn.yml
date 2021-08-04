@@ -1,0 +1,21 @@
+vi:
+  hello: "Hello Word"
+  about: "Về chúng tôi"
+  home: "Trang chủ"
+  help: "Trợ giúp"
+  eng: "Tiếng Anh"
+  vn: "Tiếng Việt"
+  ror_sample_app: "Hướng dẫn ứng dụng mẫu Ruby on Rails"
+  link_home: "Đây là trang chủ hướng dẫn ứng dụng mẫu cho %{anchor}"
+  link_about: "Cuốn %{anchor}, một phần của dòng hướng dẫn %{anchor1}, là một %{anchor2} and %{anchor3}
+   để dạy phát triển web với %{anchor4}. Đây là ứng dụng mẫu cho hướng dẫn."
+  link_help: "Nhận trợ giúp Ruby on Rails Tutorial tại %{anchor}.
+   Để nhận trợ giúp với ứng dụng mẫu này, hãy xem %{anchor1}."
+  tutorial_ror: " Hướng dẫn Ruby on Rails"
+  get_help: "phần trợ giúp Ruby on Rails"
+  ror_book: "sách Ruby on Rails Tutorial"
+  contact: "Liên hệ"
+  contact_page: "Trang liên hệ"
+  book: "cuốn sách"
+  and: "và"
+  screencast_series: "loạt video ghi màn hình"
