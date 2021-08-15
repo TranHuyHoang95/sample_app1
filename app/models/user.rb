@@ -1,17 +1,10 @@
-class User
-  attr_accessor :f_name, :l_name, :email
-
-  def initialize attributes = {}
-    @f_name = attributes[:f_name]
-    @l_name = attributes[:l_name]
-    @email  = attributes[:email]
-  end
-
-  def full_name2
-    @f_name + " " + @l_name
-  end
-
-  def formatted_email
-    full_name2 + " <#{@email}>"
-  end
+class User < ApplicationRecord
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i.freeze
+  before_save{email.downcase!}
+  validates :name, presence: true, length: {maximum: Settings.length.max_name}
+  validates :email, presence: true, length: {maximum: Settings.length.max_email},
+    format: {with: VALID_EMAIL_REGEX},
+    uniqueness: {case_sensitive: false}
+  has_secure_password
+  validates :password, presence: true, length: {minimum: Settings.length.min_password}
 end
