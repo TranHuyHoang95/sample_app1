@@ -8,11 +8,17 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <!--[if lt IE 9]>
+      <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+    <%= render "layouts/shim" %>
   </head>
-
   <body>
-    <%= link_to t("eng"), locale: :en %>
-    <%= link_to t("vn"), locale: :vi %>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container">
+       <%= yield %>
+       <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
+<%= render "layouts/shim" %>
