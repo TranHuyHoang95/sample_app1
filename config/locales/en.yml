@@ -7,6 +7,7 @@ en:
   help: "Help"
   login: "Login"
   news: "News"
+  user_nil: "There is no corresponding account! Please sign up if you don't have an account yet!"
   link_footer: "The %{anchor} by %{anchor1}"
   welcome_home: " Welcome to the Sample App"
   sign_up: "Sign up now!"
@@ -30,3 +31,15 @@ en:
   book: "book"
   and: "and"
   screencast_series: "screencast series"
+  error: "error"
+  error_signup: "The form contains %{anchor}!"
+
+  helpers:
+    label:
+      user:
+        name: "Name"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+    submit:
+      user:
+        create: "Create my account"

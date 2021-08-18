@@ -2,3 +2,5 @@ length:
   max_name: 50
   max_email: 255
   min_password: 6
+size: 
+  user_image: 80
