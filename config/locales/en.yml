@@ -30,3 +30,14 @@ en:
   book: "book"
   and: "and"
   screencast_series: "screencast series"
+  form_contains: "The form contains "
+
+  helpers:
+    label:
+      user:
+        name: "Name"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+    submit:
+      user:
+        create: "Create my account"
