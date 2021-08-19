@@ -5,12 +5,14 @@ vi:
   help: "Trợ giúp"
   login: "Đăng nhập"
   news: "Tin tức"
+  user_nil: "Không có tài khoản tương ứng! Vui lòng đăng ký nếu bạn chưa có tài khoản!"
   user: "Người dùng"
   account: "Tài khoản"
   profile: "Hồ sơ"
   settings: "Cài đặt"
   logout: "Đăng xuất"
   new_user: "Người dùng mới?"
+  remember_me: "Ghi nhớ đăng nhập!"
   invalid_login: "Email hoặc mật khẩu không hợp lệ!"
   link_footer: "Cuốn %{anchor} bởi %{anchor1}"
   welcome_home: " Chào mừng đến với Ứng dụng mẫu"
@@ -36,7 +38,8 @@ vi:
   and: "và"
   screencast_series: "loạt video ghi màn hình"
   form_contains: "Form chứa"
-
+  error: "lỗi"
+  error_signup: "Form chứa %{anchor}"
   helpers:
     label:
       user:
