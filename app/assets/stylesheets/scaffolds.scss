@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 :root{
   --a_tag: #000;
   --hight_light: #fff;
@@ -43,9 +46,8 @@ div.actions {
   color: green; }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table; }
+  color: $state-danger-text;
+}
 
 #error_explanation {
   width: 450px;

@@ -5,6 +5,7 @@ vi:
   help: "Trợ giúp"
   login: "Đăng nhập"
   news: "Tin tức"
+  user_nil: "Không có tài khoản tương ứng! Vui lòng đăng ký nếu bạn chưa có tài khoản!"
   link_footer: "Cuốn %{anchor} bởi %{anchor1}"
   welcome_home: " Chào mừng đến với Ứng dụng mẫu"
   sample_app: "Ứng dụng mẫu"
@@ -28,3 +29,15 @@ vi:
   book: "cuốn sách"
   and: "và"
   screencast_series: "loạt video ghi màn hình"
+  error: "lỗi"
+  error_signup: "Form chứa %{anchor}"
+  
+  helpers:
+    label:
+      user:
+        name: "Tên"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+    submit:
+      user: 
+        create: "Tạo tài khoản"
