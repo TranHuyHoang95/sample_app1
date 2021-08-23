@@ -9,6 +9,7 @@
 /.framgia-ci-reports/
 .framgia-ci-result.temp.yml
 /config/database.yml
+/config/application.yml
 /test/
 /bower_components/
 # Ignore the default SQLite database.
