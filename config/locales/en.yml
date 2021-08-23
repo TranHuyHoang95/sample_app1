@@ -14,6 +14,7 @@ en:
   settings: "Settings"
   logout: "Log out"
   new_user: "New user?"
+  remember_me: "Remmember login!"
   invalid_login: "Invalid email or password combination!"
   link_footer: "The %{anchor} by %{anchor1}"
   welcome_home: " Welcome to the Sample App"
@@ -38,9 +39,9 @@ en:
   book: "book"
   and: "and"
   screencast_series: "screencast series"
+  form_contains: "The form contains "
   error: "error"
   error_signup: "The form contains %{anchor}!"
-
   helpers:
     label:
       user:
