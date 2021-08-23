@@ -7,7 +7,9 @@ ruby "2.7.2"
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "bootstrap-sass", "3.4.1"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
+gem "faker", "2.1.2"
 gem "mysql2"
 gem "rails", "~> 6.1.4"
 gem "rails-controller-testing"
@@ -71,3 +73,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "will_paginate", "3.1.8"
