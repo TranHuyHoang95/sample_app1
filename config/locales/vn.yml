@@ -6,6 +6,13 @@ vi:
   login: "Đăng nhập"
   news: "Tin tức"
   user_nil: "Không có tài khoản tương ứng! Vui lòng đăng ký nếu bạn chưa có tài khoản!"
+  user: "Người dùng"
+  account: "Tài khoản"
+  profile: "Hồ sơ"
+  settings: "Cài đặt"
+  logout: "Đăng xuất"
+  new_user: "Người dùng mới?"
+  invalid_login: "Email hoặc mật khẩu không hợp lệ!"
   link_footer: "Cuốn %{anchor} bởi %{anchor1}"
   welcome_home: " Chào mừng đến với Ứng dụng mẫu"
   sample_app: "Ứng dụng mẫu"
@@ -31,7 +38,7 @@ vi:
   screencast_series: "loạt video ghi màn hình"
   error: "lỗi"
   error_signup: "Form chứa %{anchor}"
-  
+
   helpers:
     label:
       user:
