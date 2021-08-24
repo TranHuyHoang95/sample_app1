@@ -1,4 +1,6 @@
 vi:
+  eng: "Tiếng Anh"
+  vn: "Tiếng Việt"
   hello: "Hello Word"
   about: "Về chúng tôi"
   home: "Trang chủ"
@@ -12,6 +14,7 @@ vi:
   settings: "Cài đặt"
   logout: "Đăng xuất"
   new_user: "Người dùng mới?"
+  remember_me: "Ghi nhớ đăng nhập!"
   invalid_login: "Email hoặc mật khẩu không hợp lệ!"
   link_footer: "Cuốn %{anchor} bởi %{anchor1}"
   welcome_home: " Chào mừng đến với Ứng dụng mẫu"
@@ -36,9 +39,9 @@ vi:
   book: "cuốn sách"
   and: "và"
   screencast_series: "loạt video ghi màn hình"
+  form_contains: "Form chứa"
   error: "lỗi"
   error_signup: "Form chứa %{anchor}"
-
   helpers:
     label:
       user:
