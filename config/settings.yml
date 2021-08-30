@@ -4,3 +4,4 @@ length:
   min_password: 6
 size: 
   user_image: 80
+per_page: 15
