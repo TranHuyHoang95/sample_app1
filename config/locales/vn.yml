@@ -54,6 +54,21 @@ vi:
   form_contains: "Form chứa"
   error: "lỗi"
   error_signup: "Form chứa %{anchor}"
+  text: "Chào mừng đến với Ứng dụng mẫu! Nhấn vào link để kích hoạt tài khoản của bạn: %{anchor}"
+  
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      check_mail: "vui lòng kiểm tra mail để kích hoạt tài khoản của bạn!"
+      message:
+      activated: "Tài khoản đã được kích hoạt!"
+      invalid_link: "Đường dẫn kích hoạt không hợp lệ!"
+    
+  mailer_welcome_text:  "Xin chào %{anchor},
+        Chào mừng đến với Ứng dụng mẫu, nhấp vào đường dẫn để kích hoạt tài khoản của bạn: %{anchor2}"
+  mailer_welcome_html:  "<p>Xin chào %{anchor},</p>
+        <p>Chào mừng đến với Ứng dụng mẫu, nhấp vào đường dẫn để kích hoạt tài khoản của bạn: %{anchor2}</p>"
+
   helpers:
     label:
       user:

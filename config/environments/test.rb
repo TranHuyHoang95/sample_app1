@@ -49,8 +49,23 @@ Rails.application.configure do
   # Raise exceptions for disallowed deprecations.
   config.active_support.disallowed_deprecation = :raise
 
+  # config.action_mailer.delivery_method = :test
+# config.action_mailer.default_url_options = { host: "localhost:3000" }
+
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
+
+  config.action_mailer.default_url_options = {host: "localhost:3000"}
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"],
+      authentication: :plain,
+      enable_starttls_auto: true
+  }
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

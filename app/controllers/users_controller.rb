@@ -5,8 +5,8 @@ class UsersController < ApplicationController
   before_action :check_permission, only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page],
-      per_page: Settings.per_page).order("id asc")
+    @users = User.activated.paginate(page: params[:page],
+      per_page: Settings.per_page).order_by_id
   end
 
   def new
@@ -17,17 +17,17 @@ class UsersController < ApplicationController
     return if @user
 
     flash[:danger] = t "user_nil"
-    redirect_to signup_path
+    redirect_to root_url && return unless @user.activated
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      remember @user
-      flash[:success] = t "welcome_home"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "user_mailer.account_activation.check_mail"
+      redirect_to root_url
     else
+      flash.now[:danger] = t "signup_failed"
       render :new
     end
   end
@@ -85,6 +85,6 @@ class UsersController < ApplicationController
   end
 
   def check_permission
-    redirect_to(root_url) unless current_user.admin?
+    redirect_to root_url unless current_user.admin?
   end
 end

@@ -1,0 +1,2 @@
+<%= raw t :mailer_message_text , anchor: @user.name,
+  anchor2: edit_account_activation_url(id: @user.activation_token,email: @user.email) %>

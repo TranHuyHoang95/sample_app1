@@ -130,6 +130,8 @@ GEM
     faker (2.1.2)
       i18n (>= 0.8)
     ffi (1.15.3)
+    figaro (1.2.0)
+      thor (>= 0.14.0, < 2)
     globalid (0.5.1)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -293,6 +295,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   config
   faker (= 2.1.2)
+  figaro
   i18n
   jbuilder (~> 2.7)
   listen (~> 3.3)
