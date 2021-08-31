@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2021_08_31_102819) do
 
-ActiveRecord::Schema.define(version: 2021_08_23_163629) do
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -23,5 +23,8 @@ ActiveRecord::Schema.define(version: 2021_08_23_163629) do
     t.datetime "activated_at"
     t.boolean "admin", default: false
     t.string "remember_digest"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
   end
+
 end
