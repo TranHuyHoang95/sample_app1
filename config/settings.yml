@@ -2,8 +2,15 @@ length:
   max_name: 50
   max_email: 255
   min_password: 6
+  max_micropost: 140
 size: 
   user_image: 80
-per_page: 15
+  micropost: 50
+per_page:
+  user: 15
+  micropost: 5
 time:
   reset_expired: <%= 2.hours.ago %>
+micropost:
+  image_size: 5
+  image_display: 500
