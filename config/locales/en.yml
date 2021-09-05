@@ -101,3 +101,19 @@ en:
     has_been_reset: "Password has been reset!"
     has_expired: "Password reset has expired."
     invalid_user: "Invalid user! (It hasn't activated or invalid password reset link)"
+
+  micropost_creat_at: "Posted %{anchor} ago"
+  micropost:
+    create_success: "Micropost created!"
+    create_failed: "Create failed!"
+    title: "micropost"
+    compose_new: "Compose new micropost..."
+    post: "Post"
+    delete_success: "Micropost deleted"
+    delete_failed: "Error! Can't delete this micropost"
+  view_profile: "view my profile"
+  alert_invalid_image: "Maximum file size is 5MB. Please choose a smaller file."
+  errors:
+    messages:
+      image_invalid_type: "Must be a valid image format"
+      image_invalid_size: "Should be less than 5MB"

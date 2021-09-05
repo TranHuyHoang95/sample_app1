@@ -4,13 +4,19 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.7.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
+gem "active_storage_validations", "0.8.2"
+gem "aws-sdk-s3", "1.46.0", require: false
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.4", require: false
+gem "bootstrap-kaminari-views"
 gem "bootstrap-sass", "3.4.1"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
 gem "faker", "2.1.2"
 gem "figaro"
+gem "image_processing", "1.9.3"
+gem "kaminari"
+gem "mini_magick", "4.9.5"
 gem "mysql2"
 gem "rails", "~> 6.1.4"
 gem "rails-controller-testing"

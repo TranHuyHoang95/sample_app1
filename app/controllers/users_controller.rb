@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.activated.paginate(page: params[:page],
-      per_page: Settings.per_page).order_by_id
+      per_page: Settings.per_page.user).order_by_id
   end
 
   def new
@@ -14,10 +14,14 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-
-    flash[:danger] = t "user_nil"
-    redirect_to root_url && return unless @user.activated
+    if @user
+      @microposts = @user.microposts.page(params[:page]).per_page(
+        Settings.per_page.micropost
+      ).order_creat_at_desc
+    else
+      flash[:danger] = t "user_nil"
+      redirect_to root_url && return unless @user.activated
+    end
   end
 
   def create
@@ -67,14 +71,6 @@ class UsersController < ApplicationController
     params.require(:user).permit(
       :name, :email, :password, :password_confirmation
     )
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "login_non"
-    redirect_to login_url
   end
 
   def correct_user
