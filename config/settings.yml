@@ -6,6 +6,7 @@ length:
 size: 
   user_image: 80
   micropost: 50
+  gravatar: 30
 per_page:
   user: 15
   micropost: 5

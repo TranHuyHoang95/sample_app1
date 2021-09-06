@@ -104,6 +104,7 @@ en:
 
   micropost_creat_at: "Posted %{anchor} ago"
   micropost:
+    title_2: "Micropost"
     create_success: "Micropost created!"
     create_failed: "Create failed!"
     title: "micropost"
@@ -117,3 +118,7 @@ en:
     messages:
       image_invalid_type: "Must be a valid image format"
       image_invalid_size: "Should be less than 5MB"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  following: "Following"
+  followers: "Followers"

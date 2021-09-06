@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: %i(show edit update)
+  before_action :load_user, only: %i(show edit update following followers)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :check_permission, only: :destroy
@@ -55,6 +55,19 @@ class UsersController < ApplicationController
       flash[:danger] = t "user_delete_error"
     end
     redirect_to users_url
+  end
+
+  # Handling follow
+  def following
+    @title = t "following"
+    @users = @user.following.page(params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @users = @user.followers.page(params[:page])
+    render "show_follow"
   end
 
   private

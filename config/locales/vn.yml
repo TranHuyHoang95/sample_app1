@@ -103,6 +103,7 @@ vi:
 
   micropost_creat_at: "Đã đăng %{anchor} trước"
   micropost:
+    title_2: "Bài đăng"
     title: "bài đăng"
     create_success: "Bài đăng đã được tạo!"
     create_failed: "Tạo bài đăng thất bại."
@@ -116,3 +117,7 @@ vi:
     messages:
       image_invalid_type: "Phải đúng định dạng ảnh cho phép"
       image_invalid_size: "Ảnh phải nhỏ hơn 5MB"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
+  following: "Đang theo dõi"
+  followers: "Người theo dõi"
