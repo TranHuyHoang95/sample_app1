@@ -100,3 +100,20 @@ vi:
     has_been_reset: "Mật khẩu đã được đặt lại!"
     has_expired: "Đặt lại mật khẩu đã hết hạn."
     invalid_user: "Người dùng không hợp lệ! (Nó chưa được kích hoạt hoặc liên kết đặt lại mật khẩu không hợp lệ.)"
+
+  micropost_creat_at: "Đã đăng %{anchor} trước"
+  micropost:
+    title: "bài đăng"
+    create_success: "Bài đăng đã được tạo!"
+    create_failed: "Tạo bài đăng thất bại."
+    compose_new: "Soạn micropost mới ..."
+    post: "Đăng"
+    delete_success: "Đã xoá bài đăng"
+    delete_failed: "Lỗi! Không thể xoá bài đăng này."
+    incorrect_user: "Người dùng không chính xác! Vui lòng đăng nhập tài khoản khác."
+  view_profile: "xem hồ sơ của tôi"
+  alert_invalid_image: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
+  errors:
+    messages:
+      image_invalid_type: "Phải đúng định dạng ảnh cho phép"
+      image_invalid_size: "Ảnh phải nhỏ hơn 5MB"

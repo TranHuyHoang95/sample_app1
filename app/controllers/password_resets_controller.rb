@@ -1,5 +1,6 @@
 class PasswordResetsController < ApplicationController
-  before_action :load_user, :valid_user, :check_expiration, only: %i(edit update)
+  before_action :load_user, :valid_user,
+                :check_expiration, only: %i(edit update)
 
   def new; end
 
@@ -47,7 +48,6 @@ class PasswordResetsController < ApplicationController
   end
 
   def valid_user
-    debugger
     return if @user.activated? && @user.authenticated?(
       :reset, params[:id]
     )
